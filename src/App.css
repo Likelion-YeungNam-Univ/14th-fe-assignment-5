@@ -1,0 +1,42 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+/* 전체 컨테이너 */
+.app-container {
+  display: flex;
+  flex-direction: column;
+  height: 100vh; /* 화면 전체 높이 */
+  background-color: #0f0f0f;
+  color: white;
+}
+
+/* 본문 영역 */
+.body-container {
+  display: flex;
+  flex: 1;
+  overflow: hidden; /* 스크롤이 바깥으로 나가는 것 방지 */
+}
+
+.main-content {
+  flex: 1; /* 사이드바를 제외한 나머지 가로 공간 꽉 채움 */
+  background-color: #0f0f0f; /* 유튜브 기본 배경색 */
+  padding-left: 0;
+  padding-top: 0;
+  overflow-y: auto; /* 내용이 길어지면 메인 영역만 세로 스크롤 생성 */
+  overflow-x: hidden;
+  display: flex;
+  flex-direction: column;
+}
+
+.main-content::-webkit-scrollbar {
+  display: none;
+}
+
+@media (max-width: 700px) {
+  .main-content {
+    padding-bottom: 70px;
+  }
+}
