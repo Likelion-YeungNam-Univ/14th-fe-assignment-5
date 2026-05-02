@@ -1,0 +1,29 @@
+import shorts from "./assets/shorts.png";
+import home from "./assets/home.png";
+import subscribe from "./assets/subscribe.png";
+import library from "./assets/library.png";
+
+const Barlist = [
+    {id: 1, label: "홈", icon: home},
+    {id: 2, label: "Shorts", icon: shorts},
+    {id: 3, label: "구독", icon: subscribe},
+    {id: 4, label: "내 페이지", icon: library},
+]
+
+const Bar = () => {
+  return (
+    <div className="w-16 h-screen bg-[#0f0f0f] flex flex-col items-center pt-4 gap-1 fixed left-0 top-[112px]">
+      {Barlist.map((menu) => (
+        <div
+          key={menu.id}
+          className="flex flex-col items-center gap-1 w-14 py-3 rounded-xl cursor-pointer hover:bg-[#272727] transition-colors"
+        >
+          <img src={menu.icon} alt={menu.label} className="w-5 h-5 invert" />
+          <span className="text-[10px] font-bold text-white">{menu.label}</span>
+        </div>
+      ))}
+    </div>
+  );
+};
+
+export default Bar;
