@@ -8,7 +8,7 @@ const App = () => {
   return (
     
     <>
-       <Navbar />
+      <Navbar />
       <Category/>
       <LongForm/>
       <ShortForm/>
