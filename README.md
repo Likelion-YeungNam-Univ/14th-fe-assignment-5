@@ -2,11 +2,15 @@
 영남대 멋쟁이사자처럼 14기 프론트엔드 트랙 5차시 과제
 
 * * *
-| **레퍼런스용 웹페이지 구조분석**|
-----
-|![레퍼런스용 웹페이지 캡쳐본](./images/구조분석.jpg) |
-| **완성본** |
-|![완성본 캡처본](./images/완성본.png)|
+### 레퍼런스용 웹페이지 구조분석
+
+<img src="./images/구조분석.jpg" width="800" />
+
+---
+
+### 완성본
+
+<img src="./images/완성본.png" width="800" />
 
 * * *
 # 신경 써서 구현한 부분
@@ -15,7 +19,7 @@
 - 목록(리스트)에서 커서를 올렸을때
 - 특히, 메인 대시보드에서 카드의 그림자 효과 및 텍스트 밑줄을 구현해 봤습니다.   
 
-- + <img src="./images/메인보드 캡쳐본.png" width="50%" />      
+- + <img src="./images/메인보드 캡쳐본.png" width="300" />      
 3. 메인보드 구성에 맵을 활용했습니다.
 * *  *
 # 질문
@@ -35,3 +39,14 @@
 
 1. 해당하는 코드는 제가 작성한 메인 대시보드 중 각각의 대시보드를 위한 맵 코드 입니다.  
      제가 생각하기에 복잡하다고 느껴지는데 이것을 속성에 따라 구별해서 맵을 작성하는 방법도 있을지 궁금합니다.
+```
+
+ <div className="flex-1 text-[20px] w-16">
+                <div className="  hover:bg-[#004080] bg-[#003366] flex items-center justify-center py-1">sub</div>   
+                <div className=" bg-white text-[#003366] flex items-center justify-center py-1">home</div> 
+                <div className=" hover:bg-[#004080] bg-[#003366] flex items-center justify-center py-1">menu</div>   
+                <div className=" hover:bg-[#004080] bg-[#003366] flex items-center justify-center py-1">all</div>   
+                <div className=" hover:bg-[#004080] bg-[#003366] flex items-center justify-center py-1">Q&A</div>   
+            </div>
+```
+2. 해당 코드는 맵을 사용하면 좋을 사례 였을지 궁금합니다. 같은 내용이 4개 정도 되면 맵을 사용해서 반복하는 내용을 줄이는게 좋을까요?
