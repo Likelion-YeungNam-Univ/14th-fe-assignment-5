@@ -21,16 +21,16 @@ function ShortForm() {
           className="relative min-w-[180px] h-[320px] rounded-xl overflow-hidden cursor-pointer"
         >
 
-          {/* 썸네일 */}
+         
           <img
             src={sf.thumbnail}
             className="w-full h-full object-cover"
           />
 
-          {/* 어두운 그라데이션 */}
+        
           <div className="absolute inset-0 bg-gradient-to-t from-black/70 to-transparent"></div>
 
-          {/* 텍스트 */}
+        
           <div className="absolute bottom-2 left-2 text-white">
             <p className="text-sm font-semibold line-clamp-2">
               {sf.title}

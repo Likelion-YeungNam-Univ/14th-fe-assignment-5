@@ -1,5 +1,4 @@
-// LongForm.jsx
-import React from 'react'
+//import React from 'react'
 import thumbnail from "./assets/thumbnail.png"
 
 const longFormList = [
@@ -10,14 +9,17 @@ const longFormList = [
 
 const LongForm = () => {
   return (
-    <div className="grid grid-cols-3 gap-4 p-4">
+    <div className="grid grid-cols-3 gap-6 p-4">
+      
       {longFormList.map(form => (
-        <div key={form.id} className="w-full">
+        
+        <div key={form.id} className="flex flex-col w-full">
           
           {/* 썸네일 */}
           <div className="relative aspect-video">
             <img 
               src={form.thumbnail} 
+              alt=""
               className="w-full h-full object-cover rounded-xl"
             />
             <div className="absolute bottom-2 right-2 bg-gray-800 text-white text-xs px-1 py-0.5 rounded">
@@ -25,23 +27,35 @@ const LongForm = () => {
             </div>
           </div>
 
-          {/* 정보 */}
-          <div className="flex mt-2 space-x-2">
+          {/* 정보 (무조건 아래로) */}
+          <div className="flex mt-3 space-x-3">
+            
+            {/* 프로필 */}
             <img 
               src={form.profile} 
+              alt=""
               className="w-10 h-10 rounded-full"
             />
+
+            {/* 텍스트 */}
             <div className="text-sm">
-              <div className="font-semibold">{form.title}</div>
-              <div className="text-gray-500">{form.user}</div>
+              <div className="font-semibold leading-tight">
+                {form.title}
+              </div>
+              <div className="text-gray-500">
+                {form.user}
+              </div>
               <div className="text-gray-500">
                 조회수 {form.views} · {form.date}
               </div>
             </div>
+
           </div>
 
         </div>
+
       ))}
+
     </div>
   )
 }

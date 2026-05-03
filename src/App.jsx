@@ -1,4 +1,5 @@
 import React from 'react'
+import Navbar from './Navbar'
 import Category from './Category'
 import LongForm from './LongForm'
 import ShortForm from './ShortForm'
@@ -7,8 +8,7 @@ const App = () => {
   return (
     
     <>
-    
-   <div className=" text-black font-bold ml-10 ">YouTube</div>
+       <Navbar />
       <Category/>
       <LongForm/>
       <ShortForm/>
