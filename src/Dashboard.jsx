@@ -49,7 +49,7 @@ const Dashboard = () => {
                             </div>
 
                             {/* 하단 아이콘 바 (6~7번 기능) */}
-                            <div className="flex items-center space-x-10 border-t border-gray-50">
+                            <div className="flex items-center space-x-10">
                                 {/* 6. 공지 & 6-1. 안 읽은 공지 표시 */}
                                 <div className="relative cursor-pointer group">
                                     <img className="w-10 h-8 opacity-70 group-hover:opacity-100" src={form.profile} alt="notice" />

@@ -12,7 +12,7 @@ const List = () => {
 
             <div className="flex-1 text-[20px] w-16">
                 <div className="  hover:bg-[#004080] bg-[#003366] flex items-center justify-center py-1">sub</div>   
-                <div className=" hover:bg-[#004080] bg-white text-[#003366] flex items-center justify-center py-1">home</div> 
+                <div className=" bg-white text-[#003366] flex items-center justify-center py-1">home</div> 
                 <div className=" hover:bg-[#004080] bg-[#003366] flex items-center justify-center py-1">menu</div>   
                 <div className=" hover:bg-[#004080] bg-[#003366] flex items-center justify-center py-1">all</div>   
                 <div className=" hover:bg-[#004080] bg-[#003366] flex items-center justify-center py-1">Q&A</div>   

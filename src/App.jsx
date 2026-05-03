@@ -7,7 +7,7 @@ import Logo from './Logo'
 
 const App = () => {
   return (
-    <div className="flex min-h-screen font-sans">
+    <div className="flex">
       <List />
 
       <div className="flex-1 flex flex-col min-w-0">

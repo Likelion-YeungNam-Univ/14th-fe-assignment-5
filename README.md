@@ -8,36 +8,30 @@
 | **완성본** |
 |![완성본 캡처본](./images/완성본.png)|
 
-## 섹션 분리
-*  목록
-> 1. 로고   
-> 2. 미선택 목록과 선택 목록  
-> 3. 나가기
-* 로고창 (대시보드)
-> 1. 줄나눔   
-> 2. : (더보기) 버튼
-* 대시보드 메인 화면   
--> 각 대시보드
-> 1. 메인 이미지
-> 2. : (더보기) 버튼
-> 3. 제목
-> 4. 부제목
-> 5. 해당 학기
-> 6. 공지    
-> 6-1. 안 읽은 공지 표시
-> 7. 질문 작성
-> 8. ai 대화
-* 학교 로고
-* 알림창   
-* 1. 할 일
->1. 작성
->2. 제목
->3. 과목명
->4. 기한
->5. 상세보기
->6. 창 닫기
-* 2. 최근 피드백
->1. 확인 버튼
->2. 제목
->3. 과목명
->4. 점수
+* * *
+# 신경 써서 구현한 부분
+1. 레이아웃 구성 및 텍스트나 이미지가 레이아웃을 넘쳐 깨지는 경우를 방지하려고 했습니다. 
+2. 호버를 이용했습니다.
+- 목록(리스트)에서 커서를 올렸을때
+- 특히, 메인 대시보드에서 카드의 그림자 효과 및 텍스트 밑줄을 구현해 봤습니다.   
+
+- + <img src="./images/메인보드 캡쳐본.png" width="50%" />      
+3. 메인보드 구성에 맵을 활용했습니다.
+* *  *
+# 질문
+ ```
+ const DashboradList = [
+    { id: 1, thumbnail: dashboardimages2, icon: write,profile: notice, title: "Fe-14th (2026-1)", semester: "2026년 1학기", textColor: "text-blue-600", unread: true },
+    { id: 2, color: "bg-yellow-300", icon: write, profile: notice, title: "0.사전 준비 (1039-2)", semester: "2026년 1학기", textColor: "text-yellow-600", unread: false },
+    { id: 3, color: "bg-red-300", icon: write, profile: notice, title: "1. HTML & CSS (1040-1)", semester: "2026년 1학기", textColor: "text-red-600", unread: true },
+    { id: 4, color: "bg-blue-300", icon: write, profile: notice, title: "2. JavaScript (1041-1)", semester: "2026년 1학기", textColor: "text-blue-600", unread: false },
+    { id: 5, color: "bg-green-300", icon: write, profile: notice, title: "3. React (1042-1)", semester: "2026년 1학기", textColor: "text-green-600", unread: false },
+    { id: 6, color: "bg-orange-300", icon: write, profile: notice, title: "4. Node.js (1043-1)", semester: "2026년 1학기", textColor: "text-orange-600", unread: true },
+    { id: 7, thumbnail: dashboardimages1, icon: write, profile: notice, title: "2026년_Likelion (2026-1)", semester: "2026년 1학기", textColor: "text-blue-900", unread: false },
+    { id: 8, color: "bg-purple-300", icon: write, profile: notice, title: "5. Routing (1044-1)", semester: "2026년 1학기", textColor: "text-purple-600", unread: true },
+    { id: 9, color: "bg-gray-300", icon: write, profile: notice, title: "6. useState", semester: "2026년 1학기", textColor: "text-gray-600", unread: false },
+    { id: 10, color: "bg-pink-300", icon: write, profile: notice, title: "7. useEffect", semester: "2026년 1학기", textColor: "text-pink-600", unread: false },]; 
+```
+
+1. 해당하는 코드는 제가 작성한 메인 대시보드 중 각각의 대시보드를 위한 맵 코드 입니다.  
+     제가 생각하기에 복잡하다고 느껴지는데 이것을 속성에 따라 구별해서 맵을 작성하는 방법도 있을지 궁금합니다.

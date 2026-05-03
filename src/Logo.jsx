@@ -12,7 +12,7 @@ const Logo = () => {
       />
       <div className="ml-2 text-2xl flex flex-col">
         <span className="text-2xl tracking-wide font-extrabold text-blue-900">영남대학교</span>
-        <span className="text-blue-800 text-xs">Yeungnam University</span>
+        <span className="text-blue-800 text-xs font-serif">Yeungnam University</span>
       </div>
     </div>
   )
